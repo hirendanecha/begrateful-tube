@@ -1,0 +1,180 @@
+<div class="main-container bg-color">
+  <nav class="navbar navbar-light bg-white px-5 auth-btns">
+    <div class="d-flex flex-column">
+      <img
+        src="/assets/begratefultube-logo.png"
+        class="h-60-px"
+      />
+      <!-- <h6 class="text-danger text-end">BETA</h6> -->
+    </div>
+    <div class="d-lg-none d-md-none d-block c-button-landing">
+      <fa-icon [icon]="['fas', 'bars']" (click)="mobileMenu()" />
+    </div>
+    <div class="landing-btn d-none d-md-block d-lg-block">
+      <button
+        class="btn btn-outline-primary third w-80-px"
+        (click)="openLoginPage()"
+      >
+        Login
+      </button>
+      <button
+        class="btn btn-primary third w-80-px ms-2"
+        (click)="openSignPage()"
+      >
+        Signup
+      </button>
+    </div>
+  </nav>
+
+  <div (click)="closeMenu()" class="container">
+    <div class="d-flex flex-column text-center custom-height justify-content-center">
+      <div class="content-container">
+        <div class="pb-3">
+          <h1 class="text-blue pb-4 font-64-px cursor">Be Grateful!</h1>
+          <h3 class="text-blue pb-3 cursor">Real Solutions to Implement Today to Live Healthy and Live Free</h3>
+        </div>
+      <div class="pb-4">
+        <h4 class="text-blue text-s m-0">Be Grateful!</h4>
+        <p class="text-blue text-s m-0">
+          We have provided informed freedom minded people with the following:
+        </p>
+      </div>
+      
+        <ul class="c-fonts">
+          <li>&#x25CF; Decentralized freedom of speech social media and video streaming</li>
+          <li>&#x25CF; Worldwide Organic Food Sources</li>
+          <li>&#x25CF; Worldwide products and services platform with bartering, trade with gold, silver and digital assets</li>
+          <li>&#x25CF; Natural Healing from practitioners around the world</li>
+          <li>&#x25CF; Covid fake-vaccine detox</li>
+          <li>&#x25CF; Encrypted Messaging and Video Chat Hosted on Your Server</li>
+          <li>&#x25CF; Dating for the Unvaccinated</li>
+          <li>&#x25CF; NON-fiat Digital Currency to Trade for Food & Products and Services</li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex flex-column text-center pb-4 justify-content-center">
+      <div class="content-container">
+        <div class="py-3 pt-sm-5">
+          <h3 class="pb-sm-2 cursor">
+            <a class="text-blue" href="https://freedom.buzz/" target="_blank">
+              DECENTRALIZED FREEDOM OF SPEECH SOCIAL MEDIA
+            </a>
+          </h3>
+        </div>
+        <a class="image-container" href="https://freedom.buzz/" target="_blank">
+          <img src="/assets/landing/freedom.png" class="w-100">
+        </a>
+      </div>
+    </div>
+    <div class="d-flex flex-column text-center pb-4 justify-content-center">
+      <div class="content-container">
+        <div class="py-3 pt-sm-5">
+          <h3 class="pb-sm-2 cursor">
+            <a class="text-green" href="https://localfoods.market/" target="_blank">WORLDWIDE ORGANIC FOOD SOURCES</a></h3>
+        </div>
+        <a class="image-container" href="https://localfoods.market/" target="_blank">
+          <img src="/assets/landing/localFood.png" class="w-100">
+        </a>
+      </div>
+    </div>
+    <div class="d-flex flex-column text-center pb-4 justify-content-center">
+      <div class="content-container">
+        <div class="py-3 pt-sm-5">
+          <h3 class="pb-sm-2 cursor">
+            <a class="text-black" href="https://www.lamarslist.com/" target="_blank">
+              WORLDWIDE PRODUCTS AND SERVICES PLATFORM <br>
+              WITH BARTERING, GOLD, SILVER & DIGITAL ASSETS
+            </a>
+          </h3>
+        </div>
+        <a class="image-container" href="https://www.lamarslist.com/" target="_blank">
+          <img src="/assets/landing/lamarslist.png" class="w-100">
+        </a>
+      </div>
+    </div>
+    <div class="d-flex flex-column text-center pb-4 justify-content-center">
+      <div class="content-container">
+        <div class="py-3 pt-sm-5">
+          <h3 class="pb-sm-2 cursor">
+            <a class="text-danger" href="https://www.healing.tube/" target="_blank">NATURAL HEALING</a></h3>
+        </div>
+        <a class="image-container" href="https://www.healing.tube/" target="_blank">
+          <img src="/assets/landing/healing.png" class="w-100">
+        </a>
+      </div>
+    </div>
+    <div class="d-flex flex-column text-center pb-4 justify-content-center">
+      <div class="content-container">
+        <div class="py-3 pt-sm-5">
+          <h3 class="text-green pb-sm-2 cursor">COVID FAKE-VACCINE DETOX</h3>
+        </div>
+        <div class="image-container">
+          <img src="/assets/landing/masterpease.png" class="w-100">
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column text-center pb-4 justify-content-center">
+      <div class="content-container">
+        <div class="py-3 pt-sm-5">
+          <h3 class="pb-sm-2 cursor">
+            <a class="text-blue" href="https://2040.chat/" target="_blank">ECRYPTED MESSAGING HOSTED ON YOUR SERVER</a></h3>
+        </div>
+        <a class="image-container" href="https://2040.chat/" target="_blank">
+          <img src="/assets/landing/2040chat.png" class="w-100">
+        </a>
+      </div>
+    </div>
+    <div class="d-flex flex-column text-center pb-4 justify-content-center">
+      <div class="content-container">
+        <div class="py-3 pt-sm-5">
+          <h3 class="pb-sm-2 cursor">
+            <a class="text-black" href="https://organic.dating/" target="_blank">
+              DATING FOR THE UN-VACCINATED
+            </a>
+          </h3>
+        </div>
+        <a class="image-container" href="https://organic.dating/" target="_blank">
+          <img src="/assets/landing/organicdating.png" class="w-100">
+        </a>
+      </div>
+    </div>
+    <div class="d-flex flex-column text-center pb-4 justify-content-center">
+      <div class="content-container">
+        <div class="py-3 pt-sm-5">
+          <h3 class="text-blue pb-sm-2 cursor">
+            <a class="text-blue cursor" href="https://1776token.com/" target="_blank">
+              Non-Fiat Digital Currency to Trade for Food & Products & Services
+            </a>
+          </h3>
+        </div>
+        <a class="image-container" href="https://1776token.com/" target="_blank">
+          <img src="/assets/landing/1776.png" class="w-100">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-container *ngIf="mobileMenuToggle">
+  <div class="main-area p-5 profile-content">
+    <div class="head-area">
+      <div class="d-flex gap-3">
+        <div class="text-area">
+          <h6 class="m-0 mb-1"></h6>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-row-reverse c-button-landing">
+      <button class="c-btn" (click)="closeMenu()">
+        <fa-icon [icon]="['fas', 'xmark']" />
+      </button>
+    </div>
+    <ul class="ps-0">
+      <li>
+        <a class="mdtxt text-black" (click)="openLoginPage()"> Login </a>
+      </li>
+      <li>
+        <a class="mdtxt text-black" (click)="openSignPage()"> Sign up </a>
+      </li>
+    </ul>
+  </div>
+</ng-container>
