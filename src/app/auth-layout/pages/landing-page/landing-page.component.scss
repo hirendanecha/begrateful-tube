@@ -14,7 +14,9 @@
     @media (max-width:767px) {
       padding: 5px;
     }
-
+    .header-text{
+      font-size:min(max(70px, 2vw), 80px);
+    }
     .text-blue {
       color: #11134d;
       font-weight: 700;
@@ -49,6 +51,7 @@
 
     .image-container img{
       max-height: 550px;
+      max-width: 900px;
       border-radius: 10px;
     }
   }
