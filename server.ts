@@ -88,52 +88,6 @@ export function app(): express.Express {
           url: 'https://begrateful.tube' + params,
           keywords: 'BeGrateful.tube',
         };
-        if (params.indexOf('channel/') > -1) {
-          let id = params.split('/');
-          id = id[id.length - 1];
-          // id = params[params.length - 1];
-          // id = Number(id);
-          // let id = 'local-organic-food-sources';
-          console.log({ id });
-
-          // if (!isNaN(id) || Math.sign(id) > 0) {
-          const channel: any = await getChannel(id);
-
-          console.log({ params }, { id }, channel.data[0]);
-
-          const talent = {
-            name: channel.data[0]?.firstname,
-            description: channel.data[0]?.unique_link,
-            image: channel.data[0]?.profile_pic_name,
-          };
-          seo.title = talent.name;
-          seo.description = strip_html_tags(talent.description);
-          seo.image = `${talent.image}`;
-          // }
-        } else if (params.indexOf('video/') > -1) {
-          let id = params.split('/');
-          id = id[id.length - 1];
-          // id = params[params.length - 1];
-          // id = Number(id);
-          // let id = 'local-organic-food-sources';
-          console.log({ id });
-
-          // if (!isNaN(id) || Math.sign(id) > 0) {
-          const [post]: any = await getPost(+id);
-
-          console.log('post', post);
-          const pdhtml = document.createElement('div');
-          pdhtml.innerHTML = post?.postdescription || post?.metadescription;
-          const talent = {
-            name: post?.title || post?.albumname || 'BeGrateful.tube Post',
-            description: pdhtml?.textContent || 'Post content',
-            image: post?.thumbfilename || post?.metaimage || post?.imageUrl || 'https://begrateful.tube/assets/begratefultube-logo.png',
-          };
-          seo.title = talent.name;
-          seo.description = strip_html_tags(talent.description);
-          seo.image = talent.image;
-          // }
-        }
 
         html = html.replace(/\$TITLE/g, seo.title);
         html = html.replace(/\$DESCRIPTION/g, strip_html_tags(seo.description));
@@ -155,19 +109,6 @@ export function app(): express.Express {
     );
   });
   return server;
-}
-
-async function getChannel(id: any) {
-  return fetch(api_url + 'channels/' + id)
-    .then((resp) => resp.json())
-    .catch((err) => {
-      console.log('getChannel: ', err);
-    });
-}
-
-async function getPost(id: any) {
-  console.log(api_url);
-  return fetch(api_url + 'posts/get/' + id).then((resp) => resp.json());
 }
 
 function strip_html_tags(str: any) {
