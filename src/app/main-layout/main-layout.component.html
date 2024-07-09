@@ -6,13 +6,9 @@
   </ng-container>
 
 
-  <div id="content-wrapper" [ngClass]="{'sidebar-toggled': !shareService.isSidebarOpen}" >
+  <div id="content-wrapper" >
     <div class="container-fluid pb-0 min-vh-100">
       <router-outlet />
     </div>
-
-    <!-- <app-footer /> -->
   </div>
 </div>
-
-<app-mobile-menu />
