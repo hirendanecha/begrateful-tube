@@ -1,14 +1,8 @@
 <nav
   class="navbar navbar-expand navbar-light bg-white osahan-nav fixed-top justify-content-between gap-3 h-56-px"
 >
-  <ng-container *ngIf="shareService.getCredentials(); else noCredentials">
-    <div class="nav-logo">
-      <button
-        class="btn btn-link btn-sm text-secondary order-1 order-sm-0 ms-1"
-        (click)="toggleSidebar()"
-      >
-        <fa-icon [icon]="['fas', 'bars']" [fixedWidth]="true" />
-      </button>
+  <div class="d-flex align-items-center justify-content-between w-100 m-2">
+    <div class="d-flex">
       <a class="navbar-brand ms-2 me-1" routerLink="/home"
         ><img
           class="img-fluid h-40-px rounded"
@@ -16,26 +10,5 @@
           src="/assets/begratefultube-logo.png"
       /></a>
     </div>
-  </ng-container>
-  <ng-template #noCredentials>
-    <div class="d-flex align-items-center justify-content-between w-100 m-2">
-      <div class="d-flex">
-        <a class="navbar-brand ms-2 me-1" routerLink="/home"
-          ><img
-            class="img-fluid h-40-px rounded"
-            alt=""
-            src="/assets/begratefultube-logo.png"
-        /></a>
-      </div>
-
-      <div class="d-flex">
-        <a routerLink="/login">
-          <button class="btn btn-outline-primary me-2">Login</button>
-        </a>
-        <a routerLink="/register">
-          <button class="btn btn-primary">Sign up</button>
-        </a>
-      </div>
-    </div>
-  </ng-template>
+  </div>
 </nav>

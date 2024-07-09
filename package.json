@@ -8,8 +8,6 @@
     "build:dev": "ng build --configuration development",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run begrateful-tube:dev-serve-ssr",
-    "serve:ssr": "node tube-dist/begrateful-tube/server/main.js",
     "build:ssr": "ng build && ng run begrateful-tube:server",
     "prerender": "ng run freedom-tube:prerender"
   },
