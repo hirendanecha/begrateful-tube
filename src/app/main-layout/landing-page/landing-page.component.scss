@@ -15,7 +15,8 @@
       padding: 5px;
     }
     .header-text {
-      font-size: min(max(50px, 6vw), 80px);
+      // font-size: min(max(50px, 6vw), 80px);
+      font-size: min(max(50px, 8vw), 100px);
     }
     .heading-text {
       font-size: min(max(24px, 3vw), 33px);
@@ -35,15 +36,15 @@
       font-weight: 700;
     }
     .text-s {
-      font-size: min(max(16px, 2vw), 24px);
+      font-size: min(max(16px, 3vw), 26px);
     }
     .c-fonts {
       list-style: none;
       li {
         color: #11134d;
-        line-height: 30px;
-        font-size: 16px;
-        @media (max-width: 550px) {
+        line-height: 34px;
+        font-size: min(max(16px, 2vw), 20px);
+        @media (max-width: 800px) {
           line-height: 26px;
         }
       }
