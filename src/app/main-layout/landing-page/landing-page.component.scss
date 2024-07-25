@@ -73,7 +73,8 @@
   }
 
   .custom-height {
-    height: calc(100vh - 20px);
+    height: 100vh;
+    // height: calc(100vh - 20px);
     min-height: 400px;
     position: relative;
     top: 20px;
